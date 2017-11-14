@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Particles</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="css/font-awesome.css" type="text/css" rel="stylesheet" >
+</head>
+<body>
+  <nav>
+    <a href=""><img src="img/logo.png"></a>
+    <h4>Движение частиц в электромагнитном поле</h4>
+    <div class="menu">
+      <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О проекте</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div>
+  </div>
+  <main>
+    <div class="control">
+
+      <div class="options">
+        <div class="title-project">
+          <h3>Движение частиц с одинаковым радиусом</h3>
+          <a class="yellow">Теория <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+        </div>
+        <div class="setting">
+          <h3 class="yellow setting-title">Параметры</h3>
+          <label>Колличество частиц, ед</label><br>
+          <input type="text" class="quantity_el" value="3"><br>
+          <label>Заряд частиц</label><br>
+          <select class="total_charge charge">
+            <option value="1">Положительный</option>
+            <option value="0">Отрицательный</option>
+          </select><br>
+          <label>Скорость, Мм/сек</label><br>
+          <input type="text" class="total_duration duration" value="5"><br>
+          <div id="play-options"><p>Параметры частиц <i class="fa fa-angle-right" aria-hidden="true"></i></p></div>
+          <br>
+          <div id="enter">Запустить</div>
+        </div>
+      </div>
+
+      <div id="description">
+        <div class="back"><i class="fa fa-arrow-left" aria-hidden="true"></i></div>
+        <div>
+          <p class="theory">Теория</p>
+          <h3>Движение частиц с одинаковым радиусом</h3> 
+          <p>На заряженную частицу движущеюся в магнитном поле действут сила Лоренса. Она перпендикулярна к вектору скорости и к вектору индукции.<br> Если скорость перпендикулярна к магнитному полю, частица движется по окружности. 
+          Радиус этой окружности зависит от заряда этой частицы, ее скорости и индукции магнитного поля. Период обращения частицы зависит от массы, заряда частицы, индукции поля. Но не зависит от скорости частицы.<br>
+          Если векторы скорости отличаются лишь по направлению, то частиц будут описывать окружности одинакового радиуса. Если скорости различны по величине, то различными будут и радиусы окружностей, но периоды обращения будут одинаковыми.
+          С увеличением индукции поля радиус окружности, а следовательно и период обращения, уменьшаются.
+          </p> 
+        </div>
+      </div>
+      
+      <div id="options_particles">
+        <div>
+          <div class="back"><i class="fa fa-arrow-left" aria-hidden="true"></i></div>
+          <h4>Выберите параметры для каждой частицы</h4><br>
+          <div id="options-block"></div>
+        </div>  
+      </div>
+
+    </div>
+
+    <div class="particles-block">
+      <div id="enter-play"><img src="img/play.svg"></div>
+      <div class="particles"></div>
+    </div>  
+  </main>
+  <footer>
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="left">
+          <i class="fa fa-copyright" aria-hidden="true"></i> All rights Reserved
+        </div>
+        <div class="right">
+          Made by <a class="yellow" href="http://developerdmitry.ru" target="_blank">Dmitry</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="js/bundle.js"></script>
+</body>
+</html>

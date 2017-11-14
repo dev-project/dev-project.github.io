@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Particles</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="css/font-awesome.css" type="text/css" rel="stylesheet" >
+</head>
+<body>
+  <nav>
+    <a href=""><img src="img/logo.png"></a>
+    <h4>Движение частиц в электромагнитном поле</h4>
+    <div class="menu">
+      <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О проекте</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div>
+  </div>
+  <main>
+    <div class="control">
+
+      <div class="options">
+        <div class="title-project">
+          <h3>Движение частиц с одинаковым радиусом</h3>
+          <a class="yellow">Теория <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+        </div>
+        <div class="setting">
+          <h3 class="yellow setting-title">Параметры</h3>
+          <label>Колличество частиц, ед</label><br>
+          <input type="text" class="quantity_el" value="3"><br>
+          <label>Радиус, мм</label><br>
+          <input type="text" class="total_radius radius" value="10"><br>
+          <label>Заряд частиц</label><br>
+          <select class="total_charge charge">
+            <option value="1">Положительный</option>
+            <option value="0">Отрицательный</option>
+          </select><br>
+          <label>Скорость, Мм/сек</label><br>
+          <input type="text" class="total_duration duration" value="5"><br>
+          <div id="play-options"><p>Параметры частиц <i class="fa fa-angle-right" aria-hidden="true"></i></p></div>
+          <br>
+          <div id="enter">Запустить</div>
+        </div>
+      </div>
+
+      <div id="description">
+        <div class="back"><i class="fa fa-arrow-left" aria-hidden="true"></i></div>
+        <div>
+          <p class="theory">Теория</p>
+          <h3>Движение частиц с одинаковым радиусом</h3> 
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
+        </div>
+      </div>
+      
+      <div id="options_particles">
+        <div>
+          <div class="back"><i class="fa fa-arrow-left" aria-hidden="true"></i></div>
+          <h4>Выберите параметры для каждой частицы</h4><br>
+          <div id="options-block"></div>
+        </div>  
+      </div>
+
+    </div>
+
+    <div class="particles-block">
+      <div id="enter-play"><img src="img/play.svg"></div>
+      <div class="particles"></div>
+    </div>  
+  </main>
+  <footer>
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="left">
+          <i class="fa fa-copyright" aria-hidden="true"></i> All rights Reserved
+        </div>
+        <div class="right">
+          Made by <a class="yellow" href="http://developerdmitry.ru" target="_blank">Dmitry</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="js/modules.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
